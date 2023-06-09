@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Nodatabase</string>
+    <string name="AccountEmpty">please enter account name</string>
+    <string name="Accountemail">please enter account email id</string>
+</resources>

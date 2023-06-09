@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/white"
+    android:layout_margin="15dp"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="10dp"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginTop="8dp"
+    android:orientation="vertical">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edaccountNameL"
+        app:errorEnabled="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edaccountNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Account Name"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edaccountSceretKeyL"
+        app:errorEnabled="true"
+        android:focusable="false"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:padding="5dp"
+        android:layout_margin="8dp"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:text="Update" />
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>
